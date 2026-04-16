@@ -1,3 +1,0 @@
-/Users/yuseph/CS453/fresh_project/build/CMakeFiles/ngs_mpi.dir
-/Users/yuseph/CS453/fresh_project/build/CMakeFiles/edit_cache.dir
-/Users/yuseph/CS453/fresh_project/build/CMakeFiles/rebuild_cache.dir
