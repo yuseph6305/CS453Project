@@ -8,12 +8,12 @@ Setup
 
 Here’s how to run the project step by step:
 
-# 1. Generate a graph using NetGameSim
-cd NetGameSim
-java -Xms2G -Xmx8G -jar target/scala-3.2.2/netmodelsim.jar MyGraph
+## Step 1 - Graph files
+The generated graph DOT files are already in outputs/. 
+To regenerate them, use NetGameSim (see netgamesim/README.md).
 
-# 2. Convert the graph to JSON format
-python3 tools/graph_export/graph_export.py outputs/MyGraph.ngs.dot outputs/graph.json --seed 42
+## Step 2 - Export graph to JSON
+python3 tools/graph_export/graph_export.py outputs/MyFirstGraph.ngs.dot outputs/graph.json --seed 42
 
 # 3. Split the graph across MPI ranks
 python3 tools/partition/partition.py outputs/graph.json --ranks 4 --strategy contiguous --out outputs/part.json
