@@ -1,0 +1,1 @@
+/usr/bin/cc  -O2 -Wall -Wextra -Wno-unused-parameter -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/ngs_mpi.dir/src/main.c.o -o ngs_mpi  /opt/homebrew/Cellar/open-mpi/5.0.9/lib/libmpi.dylib -lm
